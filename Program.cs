@@ -14,22 +14,51 @@ namespace C_Practice
             if (checkUserInput(userInput))
             {
               var newInt = Convert.ToInt16(userInput);
-              factorsOf(newInt);
-              
+                //factorsOf(newInt);
+
+              primeCalc(newInt);  
             }
             
            
         }
 
-        
+        public static void primeCalc(int userInput)
+        {
+            Console.WriteLine("2");
+            
+            for (int i = 3; i <= userInput + 1; i++)
+            {
+                if(isPrime(i))
+                {
+                    Console.WriteLine(i);
+                }
+                    
+            }
+
+        }
+    
+   
+        public static bool isPrime(int number)
+        {
+            int boundary = (int) Math.Floor(Math.Sqrt(number));
+
+            if (number == 1) return false;
+            if (number == 2) return true;
+
+            for (int i = 2; i <= boundary; ++i)
+            {
+                if (number % i == 0) return false;
+            }
+
+            return true;
+        }
 
         
-
 
         static void factorsOf(int target)
         {
             var factors = new List<int>();
-            //double limit = Math.Sqrt(target);
+            double limit = Math.Sqrt(target);
             
             
             for (int i = 2; i <= target; i++)
@@ -88,10 +117,10 @@ namespace C_Practice
 
             return true;
         }  
-
-
     }
+    
+}
+
 
 
  
-}
