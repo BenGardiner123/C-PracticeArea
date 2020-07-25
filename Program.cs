@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace C_Practice
 {
-    class Program
+    partial class Program
     {
         static void Main(string[] args)
         {
@@ -37,28 +37,76 @@ namespace C_Practice
         public static void equationcheck()
         {
             var rand = new Random();
-            var guesChecker = new List<string>();
-            var answerChecker = new List<string>();
+            int counter = 0;
             
-            int goOne = rand.Next(1000, 9999);
-            string guess = goOne.ToString();
-            guesChecker.Add(guess);
-            
-            int multipler = rand.Next(1, 9);
-
-            int answer =  goOne * multipler;
-
-            string x = answer.ToString();
-            answerChecker.Add(x);
-            
-            if (x.Length == 4)
+            var goOn = false;
+            while(!goOn)
             {
-                string [] reversedAnswer = answerChecker.ToArray();
+                counter++;
+                int goOne = rand.Next(1000, 9999);
+                string guess = goOne.ToString();
+                char[] guessCharArray = guess.ToCharArray(); 
                 
+                int multipler = rand.Next(2, 8);
+
+                int answer =  goOne * multipler;
+
+                string x = answer.ToString();
+                char[] myArray = x.ToCharArray();
+                
+                if (myArray.Length != 4)
+                {
+                    continue;   
+                }
+                if (myArray.Length == 4)
+                {
+                    
+                    Array.Reverse(myArray);
+    
+                    if (guessCharArray.SequenceEqual(myArray))
+                    {
+                        foreach (var numbers in guessCharArray)
+                        {
+                            System.Console.Write(numbers);
+                        }
+                        System.Console.WriteLine(" * " + multipler + " is equal to ");
+                        Array.Reverse(myArray);
+                        foreach (var numbers in myArray)
+                        {
+                            
+                            System.Console.Write(numbers);
+                        }
+                        goOn = true;
+                    }
+                
+                }
+                else
+                {
+                        foreach (var numbers in guessCharArray)
+                        {
+                            System.Console.Write(numbers);
+                            System.Console.WriteLine("is not equal to");
+                        }
+                        foreach (var numbers in myArray)
+                        {
+                            System.Console.Write(numbers);
+                        }
+                    Console.WriteLine("  Wrong guess .. trying again...! " + " " + counter);
+                    Array.Clear(guessCharArray, 0, guessCharArray.Length);
+                    Array.Clear(myArray, 0, myArray.Length);
+                    multipler = 0;
+                    goOne = 0;
+                    guess = "";
+                    answer = 0;
+                    x = "";
+                    continue;
+                }
+
+               
             }
 
-
         }
+
 
 
         public static void primeCalc(int userInput)
