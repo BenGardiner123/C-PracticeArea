@@ -52,26 +52,26 @@ namespace C_Practice
                 int answer =  goOne * multipler;
 
                 string x = answer.ToString();
-                char[] myArray = x.ToCharArray();
+                char[] myAnswerArray = x.ToCharArray();
                 
-                if (myArray.Length != 4)
+                if (myAnswerArray.Length != 4)
                 {
                     continue;   
                 }
-                if (myArray.Length == 4)
+                if (myAnswerArray.Length == 4)
                 {
                     
-                    Array.Reverse(myArray);
+                    Array.Reverse(myAnswerArray);
     
-                    if (guessCharArray.SequenceEqual(myArray))
+                    if (guessCharArray.SequenceEqual(myAnswerArray))
                     {
                         foreach (var numbers in guessCharArray)
                         {
                             System.Console.Write(numbers);
                         }
                         System.Console.WriteLine(" * " + multipler + " is equal to ");
-                        Array.Reverse(myArray);
-                        foreach (var numbers in myArray)
+                        Array.Reverse(myAnswerArray);
+                        foreach (var numbers in myAnswerArray)
                         {
                             
                             System.Console.Write(numbers);
@@ -87,18 +87,14 @@ namespace C_Practice
                             System.Console.Write(numbers);
                             System.Console.WriteLine("is not equal to");
                         }
-                        foreach (var numbers in myArray)
+                        foreach (var numbers in myAnswerArray)
                         {
                             System.Console.Write(numbers);
                         }
                     Console.WriteLine("  Wrong guess .. trying again...! " + " " + counter);
                     Array.Clear(guessCharArray, 0, guessCharArray.Length);
-                    Array.Clear(myArray, 0, myArray.Length);
-                    multipler = 0;
-                    goOne = 0;
-                    guess = "";
-                    answer = 0;
-                    x = "";
+                    Array.Clear(myAnswerArray, 0, myAnswerArray.Length);
+                
                     continue;
                 }
 
