@@ -7,7 +7,11 @@
             "type": "process",
             "args": [
                 "build",
+<<<<<<< HEAD
                 "${workspaceFolder}/C-PracticeArea.csproj",
+=======
+                "${workspaceFolder}/C-PracticeArea-1.csproj",
+>>>>>>> 190b0290b5783da58f7ccd6363944fea1c0f687c
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +23,11 @@
             "type": "process",
             "args": [
                 "publish",
+<<<<<<< HEAD
                 "${workspaceFolder}/C-PracticeArea.csproj",
+=======
+                "${workspaceFolder}/C-PracticeArea-1.csproj",
+>>>>>>> 190b0290b5783da58f7ccd6363944fea1c0f687c
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,7 +40,11 @@
             "args": [
                 "watch",
                 "run",
+<<<<<<< HEAD
                 "${workspaceFolder}/C-PracticeArea.csproj",
+=======
+                "${workspaceFolder}/C-PracticeArea-1.csproj",
+>>>>>>> 190b0290b5783da58f7ccd6363944fea1c0f687c
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

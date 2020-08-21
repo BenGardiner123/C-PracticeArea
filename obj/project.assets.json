@@ -13,11 +13,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\User\\Desktop\\C-PracticeArea\\C-PracticeArea.csproj",
       "projectName": "C-PracticeArea",
       "projectPath": "C:\\Users\\User\\Desktop\\C-PracticeArea\\C-PracticeArea.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\User\\Desktop\\C-PracticeArea\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\C-PracticeArea-1\\C-PracticeArea-1.csproj",
+      "projectName": "C-PracticeArea-1",
+      "projectPath": "C:\\Users\\User\\Desktop\\C-PracticeArea-1\\C-PracticeArea-1.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\C-PracticeArea-1\\obj\\",
+>>>>>>> 190b0290b5783da58f7ccd6363944fea1c0f687c
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
