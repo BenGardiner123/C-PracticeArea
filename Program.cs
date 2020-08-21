@@ -1,5 +1,4 @@
 ﻿using System;
-<<<<<<< HEAD
 
 namespace C_PracticeArea
 {
@@ -30,8 +29,7 @@ namespace C_PracticeArea
         }
     }
 }
-=======
-using System.Collections.Generic;
+/* using System.Collections.Generic;
 using System.Linq;
 
 namespace C_Practice
@@ -50,7 +48,7 @@ namespace C_Practice
                 //factorsOf(newInt);
 
               primeCalc(newInt);  
-            } */
+            } 
             
            ///.!---.!---.!---.!---.!---.!---.!---.!---.!---.!---.!---.!---.!---
             //SECOND HOMEWORK TASK - Problem 3 - ABCD * E == DCBA
@@ -58,7 +56,7 @@ namespace C_Practice
             Write a program to find the values for A, B, C, D, E that makes the statement "ABCD * E = DCBA" true.
             Each digit must be unique. Each digit must be a value from 0 - 9. There is one valid solution.
             */
-
+        /*
            equationcheck();
 
 
@@ -235,8 +233,7 @@ namespace C_Practice
     }
     
 }
-
+ */
 
 
  
->>>>>>> 190b0290b5783da58f7ccd6363944fea1c0f687c
